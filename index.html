@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <link type="text/css" href="estilos.css" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Corben&family=Zen+Antique+Soft&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div class="calculadora" id="calcul">
+        <div class="pantalla">
+            <input type="text" id="result" placeholder="0"><br>
+        </div>
+        <div class="imagenes">
+            <img class ="imagen1" onclick="cambiarModo()"src="/6077108.png" alt="">
+            <img class ="imagen2" onclick="del()"src="/borrar.png" alt="">
+        </div>
+        <div class="todosBotones">
+            <button name="data-number">7</button>
+            <button name="data-number">8</button>
+            <button name="data-number">9</button>
+            <button name="data-opera">/</button><br>
+            <button name="data-number">4</button>
+            <button name="data-number">5</button>
+            <button name="data-number">6</button>
+            <button name="data-opera">x</button><br>
+            <button name="data-number">1</button>
+            <button name="data-number">2</button>
+            <button name="data-number">3</button>
+            <button name="data-opera">-</button><br>
+            <button name="data-igual">=</button>
+            <button name="data-number">0</button>
+            <button name="data-delete">C</button>
+            <button name="data-opera">+</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

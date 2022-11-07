@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Corben', 'Zen Antique Soft', serif;
+}
+
+body{
+    font-size: 16px;
+    background-color: #303527;
+    display: flex;
+    justify-content: space-around;
+}
+.calculadora{
+    background-color: #829460;
+    border-radius: 15px;
+    margin: auto;
+    margin-top: 20px;
+    padding: 2rem;
+}
+button{
+    background-color: #EEEEEE;
+    border: none;
+    border-radius: 1rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    margin: 0.4rem 0.2rem;
+}
+
+input{
+    background-color: #EEEEEE;
+    border: none;
+    border-radius: 10px;
+    height: 4rem;
+    text-align: center;
+}
+.imagenes{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.3rem;
+}
+.imagen1{
+    width: 2rem;
+}
+.imagen2{
+    height: 1.6rem;
+}
+.todosBotones{
+    text-align: center;
+}
+/* MEDIA QYERIE COMPU */
+@media (min-width:735px) {
+    .calculadora{
+        width: 95%;
+    }
+    input{
+        width: 100%;
+        font-size: 20px;
+    }
+    button{
+        width: 8rem;
+        height: 3rem;
+        font-size: 20px;
+    }
+    .imagen1{
+        width: 4rem;
+    }
+    .imagen2{
+        height: 2.8rem;
+    }
+}
+
+/* CSS FUNCIONES MODO OSCURO */
+.oscuro{ 
+    background-color: #eef5ce; 
+    color: #f1eded; 
+}
+.botonesOscuros{
+    background-color:#b7c996;
+}
