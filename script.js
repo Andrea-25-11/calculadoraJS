@@ -6,6 +6,7 @@ const botonNumeros = document.getElementsByName("data-number");
 const botonOpera = document.getElementsByName("data-opera");
 const botonIgual = document.getElementsByName("data-igual")[0];
 const botonDelete = document.getElementsByName("data-delete")[0];
+const ultimoDelete = document.getElementsByName("u-del")[0];
 
 //VARIABLES
 //Debido a que las variables identificadas con var pueder cambiar su resultado y a que los resultados que arrojen las operaciones realizadas con las constantes declaradas cambiarán según su utilización, se utiliza var para la generación del resultado variable
@@ -48,7 +49,7 @@ modoOscuro.addEventListener('click', function(){
 });
 
 ultimoDelete.addEventListener('click', function(){
-    eliminarUltimo();
+    del();
     actualizarDisplay();
 });
 
@@ -74,10 +75,11 @@ function actualizarDisplay(){
     result.value = opeActual;
 }
 //funcion DEL se indica que cuando se cliquee en la imagen con el evento onclick "del" se ejecute la función del, la cual posee una serie de variables en su interior a aplicar en diferentes partes del HTML por medio del CSS
-function del() { 
-    opeActual = opeActual.slice(0, -1);
+function del(){ 
+    ultimoDelete= ultimoDelete.slice(0,-1);
 };
 
+clear();
 del();
 //funcion MODO OSCURO se indica que cuando se cliquee en la imagen con el evento onclick "cambiarModo"se ejecute la función cambiarModo, la cual posee una serie de variables en su interior a aplicar en diferentes partes del HTML por medio del CSS
 function cambiarModo() { 
@@ -87,7 +89,6 @@ function cambiarModo() {
     var calculadweb = document.getElementById("calcul"); 
     calculadweb.classList.toggle("botonesOscuros"); 
 }
-
 
 //MIN 28 si la operacion actual e sigual a vacio qu eno haga nada ypor ende salga de la operacion (no hay numero en la ope actual) si se le pregunta a la operacion anteiror es diferente a vacio se calcular. la operacion es igual a la op.tostring NO ENTENDI
 function seleccionarOperacion(op){
