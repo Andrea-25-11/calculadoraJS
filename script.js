@@ -53,6 +53,7 @@ ultimoDelete.addEventListener('click', function(){
     actualizarDisplay();
 });
 
+
 //IMPLEMENTACIÓN DE MÉTODOS O FUNCIONES
 
 //PRIMER METODO: agregarNumero
@@ -76,8 +77,10 @@ function actualizarDisplay(){
 }
 //funcion DEL se indica que cuando se cliquee en la imagen con el evento onclick "del" se ejecute la función del, la cual posee una serie de variables en su interior a aplicar en diferentes partes del HTML por medio del CSS
 function del(){ 
-    ultimoDelete= ultimoDelete.slice(0,-1);
+    opeActual= opeActual.slice(0,-1);
+    actualizarDisplay();
 };
+
 
 clear();
 del();
@@ -90,7 +93,7 @@ function cambiarModo() {
     calculadweb.classList.toggle("botonesOscuros"); 
 }
 
-//MIN 28 si la operacion actual e sigual a vacio qu eno haga nada ypor ende salga de la operacion (no hay numero en la ope actual) si se le pregunta a la operacion anteiror es diferente a vacio se calcular. la operacion es igual a la op.tostring NO ENTENDI
+//MIN 28 si la operacion actual e sigual a vacio qu eno haga nada ypor ende salga de la operacion (no hay numero en la ope actual) si se le pregunta a la operacion anteiror es diferente a vacio se calcular. la operacion es igual a la op.tostring 
 function seleccionarOperacion(op){
     if (opeActual === '') return;
     if (opeActual !== ''){
